@@ -1,12 +1,18 @@
 .work-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0px;
     align-items: center;
     color: #212121;
     font-family: inherit;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+}
+.work-title {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
