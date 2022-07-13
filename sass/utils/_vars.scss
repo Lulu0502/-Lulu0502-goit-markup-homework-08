@@ -1,0 +1,17 @@
+:root {
+    --primart-text-color: #212121;
+    --background-color: #ffffff;
+    --accent-color: #2196f3;
+    --text-color: #757575;
+}
+@mixin section ($indent) {
+    padding-top: $indent;
+    padding-bottom: $indent;
+}
+@mixin fonts ($fw, $fs, $lh, $ls, $txt-alg) {
+    font-weight: $fw;
+    font-size: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-align: $txt-alg;
+}

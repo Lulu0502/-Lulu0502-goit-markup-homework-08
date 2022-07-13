@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+.header-nav-link {
+    display: block;
+    position: relative;
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
