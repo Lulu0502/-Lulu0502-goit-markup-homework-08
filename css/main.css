@@ -237,6 +237,7 @@ p {
 .text-title {
   margin-bottom: 10px;
   align-content: center;
+  text-align: center;
   font-family: inherit;
   font-style: Bold;
   font-size: 14px;
@@ -244,6 +245,21 @@ p {
   letter-spacing: 3%;
   color: #212121;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .text-title {
+    margin-bottom: 10px;
+    align-content: center;
+    text-align: left;
+    font-family: inherit;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 3%;
+    color: #212121;
+    text-transform: uppercase;
+  }
 }
 
 .work__title {
@@ -793,22 +809,59 @@ p {
 }
 
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: 0px 0px;
+  padding: 60px 0px;
 }
 
-.benefits-list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 60px 0px;
+  }
 }
 
-.item {
-  margin-right: 30px;
-  flex-basis: 270px;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.item:last-child {
-  margin-right: 0px;
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .item {
+    max-width: 100%;
+    height: auto;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    max-width: 100%;
+    height: auto;
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .benefits-item {
@@ -836,6 +889,11 @@ p {
 .work {
   align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {
@@ -927,12 +985,16 @@ p {
 }
 
 .team-card {
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .team-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-card {
     max-width: 100%;
