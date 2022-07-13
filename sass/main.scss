@@ -3,6 +3,7 @@
 @import './utils/current';
 
 @import './base/base';
+@import './base/container';
 
 @import './components/header';
 @import './components/nav';
@@ -38,7 +39,6 @@
 @import './layouts/benefits';
 @import './layouts/work';
 @import './layouts/team';
-@import './layouts/team-card';
 @import './layouts/clients';
 @import './layouts/clients-item';
 @import './layouts/portfolio-list';
