@@ -198,18 +198,46 @@ p {
 }
 
 .hero-title {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
   margin-top: 0px;
   font-family: inherit;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: inherit;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .button-title {
@@ -295,16 +323,31 @@ p {
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0px;
   align-items: center;
   color: #212121;
   font-family: inherit;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    align-items: center;
+    color: #212121;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 
 .team-soc-list {
@@ -797,17 +840,57 @@ p {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0px auto;
-  max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-photo.jpg);
+  max-width: 480px;
+  padding: 118px 60px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #2F303A;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mob2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    margin: 0px auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tab1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2F303A;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tab2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0px auto;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2F303A;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2x.jpg);
+  }
+}
 .benefits {
   padding: 60px 0px;
 }
@@ -1039,24 +1122,50 @@ p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  align-items: center;
-  text-align: center;
+  padding: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .clients__list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
 }
 
 .clients__item {
   display: flex;
-  margin-right: 30px;
-  justify-content: center;
   align-items: center;
-  width: 170px;
+  justify-content: center;
+  max-width: 100%;
   height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
   color: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1064,12 +1173,54 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__item:last-child {
-  margin-right: 0px;
-}
 .clients__item:hover, .clients__item:focus {
   color: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 92px;
+    flex-basis: calc((100% - 60px) / 3);
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: color border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients__item:hover, .clients__item:focus {
+    color: #2196f3;
+    border-color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 92px;
+    flex-basis: calc((100% - 150px) / 6);
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: color border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients__item:last-child {
+    margin-right: 0px;
+  }
+  .clients__item:hover, .clients__item:focus {
+    color: #2196f3;
+    border-color: #2196f3;
+  }
 }
 
 .clients__icon {
