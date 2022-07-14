@@ -1,13 +1,34 @@
 .nav {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 .header-nav-link {
-    display: block;
-    position: relative;
-    margin-right: 50px;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: relative;
+        margin-right: 50px;
 
-    &:last-child {
-        margin-right: 0px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+.nav {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.header-nav-link {
+    @media screen and (min-width: 1200px) {
+        display: block;
+        position: relative;
+        margin-right: 50px;
+        
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 }

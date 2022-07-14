@@ -1,15 +1,29 @@
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 60px;
+}
+.portfolio-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        gap: 30px;
+    }
+}
+.portfolio-list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
 }
 .portfolio-item {
-    margin: 15px;
-
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -19,6 +33,40 @@
         transform: translateY(0);
     }
 }
+@media screen and (max-width: 767px) {
+    .portfolio-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+.portfolio-item {
+    @media screen and (min-width: 768px) {
+        max-width: 100%;
+        height: auto;
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+.portfolio-item {
+    @media screen and (min-width: 1200px) {
+        max-width: 100%;
+        height: auto;
+        flex-basis: calc((100% - 60px) / 3);
+        
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        
+        &:hover .blue-card-text {
+            transform: translateY(0);
+        }
+    }  
+}
+
 .blue-card {
     position: relative;
     overflow: hidden;

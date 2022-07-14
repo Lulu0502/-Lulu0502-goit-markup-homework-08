@@ -1,19 +1,46 @@
 .logo {
     margin-right: 93px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway',
+    sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: #212121;
 }
 .web {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway',
+    sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: #2196F3;
+    }
+.logo {
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        font-family: 'Raleway',
+        sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+}
+.web {
+    @media screen and (min-width: 1200px) {
+        font-family: 'Raleway',
+        sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+    }
 }

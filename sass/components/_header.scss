@@ -1,35 +1,47 @@
 .page-header {
-    border-bottom: 1px solid #ECECEC;
-    &.current {
-        border-bottom: 0px;
+    @media screen and (min-width: 1200px) {
+        border-bottom: 1px solid #ECECEC;
+        
+        &.current {
+            border-bottom: 0px;
+        }
     }
 }
 .header-list {
-    display: flex;
-    align-items: center;
-    margin-left: 0px;
-
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
 }
 .header-container {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 .header-contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
 }
 .header-link-icon {
-    display: inline-block;
-    margin-right: 10px;
-    fill: currentColor;
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        margin-right: 10px;
+        fill: currentColor;
+    }
 }
 .header-contact-link {
-    display: flex;
-    margin-right: 50px;
-    margin-left: auto;
-
-    &:last-child {
-        margin-right: 0px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-right: 50px;
+        margin-left: auto;
+        
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 }
