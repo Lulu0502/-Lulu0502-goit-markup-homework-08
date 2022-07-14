@@ -1,13 +1,30 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #2F303A;
+        padding: 60px 0px;
+        background-color: #2F303A;
 }
+.footer {
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+        background-color: #2F303A;
+    }
+}
+.footer {
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #2F303A;
+    }
+}
+
 .footer-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 .footer-box {
-    margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
