@@ -6,12 +6,39 @@
 }
 .footer-soc {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.footer-soc {
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 0px;
+        margin-right: 89px;
+        margin-bottom: 60px;
+        text-align: center;
+    } 
+}
+.footer-soc {
+ @media screen and (min-width: 1200px) {
+    display: block;
     margin: 0px;
+    text-align: left;
+    }
 }
 .footer-soc-list {
     display: flex;
+    justify-content: center;
     margin-bottom: 0px;
     color: #ffffff;
+}
+.footer-soc-list {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-bottom: 0px;
+        color: #ffffff;
+        }
 }
 .footer-link-item {
     display: flex;

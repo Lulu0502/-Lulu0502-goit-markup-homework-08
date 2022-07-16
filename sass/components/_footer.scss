@@ -1,9 +1,10 @@
 .footer {
-        padding: 60px 0px;
-        background-color: #2F303A;
+    padding: 60px 0px;
+    background-color: #2F303A;
 }
 .footer {
     @media screen and (min-width: 768px) {
+        justify-content: center;
         padding-bottom: 60px;
         background-color: #2F303A;
     }
@@ -15,7 +16,17 @@
         background-color: #2F303A;
     }
 }
-
+.footer-container {
+    display: block;
+    margin: 0 auto;
+}
+.footer-container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
 .footer-container {
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -24,7 +35,26 @@
     }
 }
 .footer-box {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-box {
+    @media screen and (min-width: 768px) {
+        display: block;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 70px;
+        margin-right: auto;
+    }
+}
+.footer-box {
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        text-align: left;
     }
 }
