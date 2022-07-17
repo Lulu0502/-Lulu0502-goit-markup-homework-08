@@ -1,31 +1,36 @@
-.footer-modal-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.footer-modal-form {
-    @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-    }
-}
-.footer-modal-form {
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        padding-bottom: 0;
-    }
-}
 .footer-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 166px;
+        margin-right: 152px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
     @media screen and (min-width: 1200px) {
-            display: block;
-            width: 570px;
-            margin-left: 93px;
-        }
+        display: block;
+        text-align: left;
+        margin-left: 93px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+.footer-modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.footer-modal-form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 0;
+    }
 }
 .footer-form-title {
     margin-top: 0px;
@@ -42,7 +47,7 @@
     outline: transparent;
     background-color: transparent;
     height: 50px;
-    width: 450px;
+    width: 100%;
     font-family: inherit;
     margin-bottom: 0px;
     color: #ffffff;
@@ -98,7 +103,7 @@
     @media screen and (min-width: 768px) {
         display: inline-flex;
         align-items: center;
-        margin-top: 0px;
+        margin-top: 20px;
         padding: 10px 28px;
         background-color: #2196f3;
         color: #ffffff;
