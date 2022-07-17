@@ -32,12 +32,56 @@
                     <a href="tel:+380961111111" class="header-link textdecor"><svg class="header-link-icon header-tel"><use href="./images/icons.svg#icon-tel"></use></svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="mobile-menu-btn">
+            <button type="button" class="mobile-menu-open">
                 <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden">
+            <button type="button" class="mobile-menu-close">
+                <svg width="11" height="11" aria-label="Закрытие мобильного меню">
                     <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>
                 </svg>
             </button>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link mobile-menu__nav-link--current textdecor">Студия</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link textdecor">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link textdecor">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts list">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link mobile-menu__contacts-link--current textdecor"
+                        href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-link textdecor" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials list">
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link textdecor" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link textdecor" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link textdecor" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link textdecor" href="">Linkedin</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -541,45 +585,6 @@
                 <button type="submit" class="btn">Отправить</button>
             </form>
         </div>
-    </div>
-    <div class="mobile-menu">
-        <ul class="mobile-menu__nav list">
-            <li class="mobile-menu__nav-item">
-                <a class="mobile-menu__nav-link mobile-menu__nav-link--current textdecor">Студия</a>
-            </li>
-            <li class="mobile-menu__nav-item">
-                <a class="mobile-menu__nav-link textdecor">Портфолио</a>
-            </li>
-            <li class="mobile-menu__nav-item">
-                <a class="mobile-menu__nav-link textdecor">Контакты</a>
-            </li>
-        </ul>
-        <ul class="mobile-menu__contacts list">
-            <li class="mobile-menu__contacts-item">
-            <a class="mobile-menu__contacts-link mobile-menu__contacts-link--current textdecor" href="tel:+380961111111">
-                +38 096 111 11 11
-            </a>
-            </li>
-            <li class="mobile-menu__contacts-item">
-                <a class="mobile-menu__contacts-link textdecor" href="mailto:info@devstudio.com">
-                    info@devstudio.com
-                </a>
-            </li>
-        </ul>
-        <ul class="mobile-menu__socials list">
-            <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link textdecor" href="">Instagram</a>
-            </li>
-            <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link textdecor" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link textdecor" href="">Facebook</a>
-            </li>
-            <li class="mobile-menu__socials-item">
-                <a class="mobile-menu__socials-link textdecor" href="">Linkedin</a>
-            </li>
-        </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
