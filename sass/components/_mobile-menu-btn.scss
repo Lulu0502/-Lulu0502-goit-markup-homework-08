@@ -3,6 +3,10 @@
     margin-left: auto;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        color: #2196f3;
+    }
 }
 
 .mobile-menu-open {
@@ -15,12 +19,13 @@
     margin-left: auto;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 .mobile-menu-close {
     display: block;
     margin-left: auto;
     margin-bottom: 8.3px;
-    &:focus {
+    &:hover {
         color: #2196f3;
     }
 }
