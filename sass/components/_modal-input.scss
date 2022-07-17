@@ -24,8 +24,11 @@
         border-color: #2196f3;
     }
     &:focus+& {
-        fill: #2196F3;
+        color: #2196F3;
     }
+}
+.modal-input:focus+.modal-icon {
+    fill: #2196F3;
 }
 .modal-label {
     font-size: 12px;

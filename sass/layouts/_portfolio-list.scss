@@ -1,7 +1,16 @@
+.portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.portfolio-section {
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
 .portfolio-list {
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 60px;
 }
 .portfolio-list {
     @media screen and (min-width: 768px) {

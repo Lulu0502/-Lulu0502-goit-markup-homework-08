@@ -1,3 +1,4 @@
+
 .nav {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -30,5 +31,31 @@
         &:last-child {
             margin-right: 0px;
         }
+    }
+}
+.header-mail {
+    @media screen and (min-width: 768px) {
+        margin-right: 80x;
+        width: 14px;
+        height: 10px;
+        }
+}
+.header-tel {
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;
+    }
+}
+.header-mail {
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.header-tel {
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
     }
 }

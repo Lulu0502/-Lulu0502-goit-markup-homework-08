@@ -1,10 +1,50 @@
 .page-header {
+        border-bottom: 1px solid #ECECEC;
+
+        &.current {
+            border-bottom: 0px;
+        }
+}
+.page-header {
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid #ECECEC;
+        &.current {
+            border-bottom: 0px;
+        }
+    }
+}
+.page-header {
     @media screen and (min-width: 1200px) {
         border-bottom: 1px solid #ECECEC;
         
         &.current {
             border-bottom: 0px;
         }
+    }
+}
+.header-container {
+    display: flex;
+}
+.header-container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.header-container {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.header-list {
+    display: none;
+}
+.header-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
     }
 }
 .header-list {
@@ -14,10 +54,13 @@
         margin-left: 0px;
     }
 }
-.header-container {
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
+.header-contacts {
+    display: none;
+}
+.header-contacts {
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 84px;
     }
 }
 .header-contacts {
@@ -28,10 +71,24 @@
     }
 }
 .header-link-icon {
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+.header-link-icon {
     @media screen and (min-width: 1200px) {
         display: inline-block;
         margin-right: 10px;
         fill: currentColor;
+    }
+}  
+.header-contact-link {
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 }
 .header-contact-link {
