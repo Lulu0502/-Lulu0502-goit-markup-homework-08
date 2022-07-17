@@ -1,0 +1,13 @@
+.mobile-menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu-btn {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
