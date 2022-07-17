@@ -83,12 +83,58 @@ p {
   }
 }
 
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+.page-header.current {
+  border-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    border-bottom: 1px solid #ECECEC;
+  }
+  .page-header.current {
+    border-bottom: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-header {
     border-bottom: 1px solid #ECECEC;
   }
   .page-header.current {
     border-bottom: 0px;
+  }
+}
+
+.header-container {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
   }
 }
 
@@ -100,10 +146,14 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header-container {
-    display: flex;
-    align-items: center;
+.header-contacts {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: block;
+    margin-left: 84px;
   }
 }
 
@@ -115,11 +165,25 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-link-icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-link-icon {
     display: inline-block;
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-contact-link:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -170,8 +234,37 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-mail {
+    margin-right: 80x;
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-tel {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .logo {
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -189,6 +282,31 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .web {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -216,44 +334,66 @@ p {
   }
 }
 
-.header-link {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover, .header-link:focus {
-  color: #2196F3;
+@media screen and (min-width: 768px) {
+  .header-link {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover, .header-link:focus {
+    color: #2196F3;
+  }
 }
 
-.sitenav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: #212121;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .header-link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover, .header-link:focus {
+    color: #2196F3;
+  }
 }
-.sitenav-link:focus, .sitenav-link:hover {
-  color: #2196F3;
-}
-.sitenav-link.current {
-  color: #2196f3;
+
+@media screen and (min-width: 768px) {
+  .sitenav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sitenav-link:focus, .sitenav-link:hover {
+    color: #2196F3;
+  }
+  .sitenav-link.current {
+    color: #2196f3;
+  }
 }
 
 .hero-title {
@@ -836,10 +976,38 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
 
 .modal-item {
@@ -870,9 +1038,22 @@ p {
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .btn-close {
@@ -920,6 +1101,10 @@ p {
   border-color: #2196f3;
 }
 .modal-input:focus + .modal-input {
+  color: #2196F3;
+}
+
+.modal-input:focus + .modal-icon {
   fill: #2196F3;
 }
 
@@ -977,11 +1162,21 @@ p {
 }
 
 .modal-check {
-  display: flex;
+  display: block;
   align-items: center;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
 }
 
 .check-text {
@@ -989,8 +1184,8 @@ p {
   align-items: center;
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
 }
@@ -1007,6 +1202,33 @@ p {
   margin-right: 7px;
   border: 1px solid rgb(33, 33, 33);
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgb(117, 117, 117);
+  }
+  .check-text a {
+    color: rgb(33, 150, 243);
+    margin-left: 4px;
+  }
+  .check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 2px;
+  }
 }
 
 .check-icon {
@@ -1560,10 +1782,21 @@ p {
   fill: currentColor;
 }
 
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-list {
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
