@@ -49,7 +49,7 @@ p {
 .img {
   display: block;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .body {
@@ -94,8 +94,8 @@ p {
   width: 100%;
   height: 100%;
   padding: 48px 40px;
-  transform: translateX(100%);
-  transition: transform 500ms ease-in-out;
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out, visibility 500ms ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -104,6 +104,10 @@ p {
 }
 .mobile-menu.is-open {
   transform: translateX(0);
+}
+
+.mobile-menu .is-hidden {
+  transform: translateX(100%);
 }
 
 .mobile-menu__nav {
@@ -173,7 +177,7 @@ p {
   cursor: pointer;
 }
 .mobile-menu-open:hover {
-  color: #2196f3;
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -183,20 +187,20 @@ p {
 }
 
 .mobile-menu-close {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
   border: 0;
   background-color: transparent;
   cursor: pointer;
 }
-
-.mobile-menu-close {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 8.3px;
-}
 .mobile-menu-close:hover {
-  color: #2196f3;
+  fill: #2196f3;
 }
 
 .page-header {
@@ -744,6 +748,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -759,18 +764,6 @@ p {
   display: block;
   text-align: center;
   margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-box {
-    display: block;
-    text-align: center;
-    margin-bottom: 60px;
-    margin-left: 70px;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -869,19 +862,13 @@ p {
 
 .footer-soc {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-soc {
-    display: block;
-    margin-left: 0px;
-    margin-right: 89px;
-    margin-bottom: 60px;
-    text-align: center;
+    margin-bottom: 0px;
   }
 }
 
@@ -1078,6 +1065,7 @@ p {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0px;
+  flex-grow: 1;
 }
 
 .backdrop {
@@ -1371,15 +1359,14 @@ p {
 @media screen and (min-width: 768px) {
   .footer-form {
     display: block;
-    margin-left: 166px;
-    margin-right: 152px;
-    margin-bottom: 0px;
     text-align: center;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: block;
+    width: 570px;
     text-align: left;
     margin-left: 93px;
     margin-right: 0px;
@@ -1414,9 +1401,11 @@ p {
 }
 
 .footer-modal-input {
+  padding-left: 16px;
   outline: transparent;
   background-color: transparent;
   height: 50px;
+  max-width: 450px;
   width: 100%;
   font-family: inherit;
   margin-bottom: 0px;
@@ -1438,7 +1427,7 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    width: 358px;
+    max-width: 358px;
     height: 50px;
     font-family: inherit;
     margin-bottom: 0px;
@@ -1515,8 +1504,9 @@ p {
 
 .hero {
   margin: 0px auto;
-  max-width: 480px;
-  padding: 118px 60px;
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1531,7 +1521,6 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     margin: 0px auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tab1x.jpg);
     background-repeat: no-repeat;
@@ -1551,7 +1540,6 @@ p {
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0px auto;
-    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1955,6 +1943,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     height: auto;
     flex-basis: calc((100% - 30px) / 2);
