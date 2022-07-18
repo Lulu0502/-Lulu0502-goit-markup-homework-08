@@ -5,14 +5,13 @@
     
     @media screen and (min-width: 768px) {
         display: block;
-        margin-left: 166px;
-        margin-right: 152px;
-        margin-bottom: 0px;
         text-align: center;
+        width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
         display: block;
+        width: 570px;
         text-align: left;
         margin-left: 93px;
         margin-right: 0px;
@@ -44,9 +43,11 @@
     letter-spacing: 0.03em;
 }
 .footer-modal-input {
+    padding-left: 16px;
     outline: transparent;
     background-color: transparent;
     height: 50px;
+    max-width: 450px;
     width: 100%;
     font-family: inherit;
     margin-bottom: 0px;
@@ -68,7 +69,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 16px;
-        width: 358px;
+        max-width: 358px;
         height: 50px;
         font-family: inherit;
         margin-bottom: 0px;

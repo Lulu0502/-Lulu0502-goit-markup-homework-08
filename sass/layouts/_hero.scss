@@ -1,7 +1,8 @@
 .hero {
     margin: 0px auto;
-    max-width: 480px;
-    padding: 118px 60px;
+    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mob1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +16,6 @@
 }
 .hero {
     @media screen and (min-width: 768px) {
-        max-width: 768px;
         margin: 0px auto;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tab1x.jpg);
         background-repeat: no-repeat;
@@ -36,7 +36,6 @@
     @media screen and (min-width: 1200px) {
         @include section (200px);
         margin: 0px auto;
-        max-width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1x.jpg);
         background-repeat: no-repeat;
         background-position: center;
